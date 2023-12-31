@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore IT.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="icon" href="image/logo2.png" type="image/icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="fixed-top">
+      <nav
+        class="navbar navbar-expand-lg shadow-sm"
+        style="background-color: rgba(1, 183, 196, 1)"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-1 col-md-auto">
+            <a class="navbar-brand" href="index.html" style="font-family: SF Pro Display" >
+              <img src="image/logo.png" alt="Logo" width="54" height="55" class="d-inline-block align-text-top"/>
+            </a>
+          </div>
+          <div class="cold-xl-1 d-none d-sm-block ms-xl-0 ms-lg-0 ms-md-0 ms-sm-3">
+            <a class="title-top navbar-brand"
+              href="index.html"
+              style="font-family: SF Pro Display; line-height: 10px"
+            >
+              Explore <br />IT.
+            </a>
+          </div>
+          <div class="col"></div>
+          <div class="icon-nav ms-auto">
+            <a class="search" href="#" style="margin-right: 20px; text-decoration: none"
+            >
+              <img src="image/search.png" alt="search" style="width: 24px; height: 24px" />
+            </a>
+            <a class="bell" href="notification.html" style="margin-right: 20px; text-decoration: none">
+              <img src="image/bell.png" alt="bell" style="width: 24px; height: 24px" />
+            </a>
+            <a class="prof" href="#" style="margin-right: 15px; text-decoration: none" >
+              <img src="image/prof-1-10.png" alt="prof" style="width: 46px; height: 46px"
+              />
+            </a>
+          </div>
+          <div id="navbarNew"></div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Side Navbar -->
+    <section class="jumbotron jumbotron-fluid">
+      <div class="container-fluid overflow-hidden">
+        <div class="row">
+          <div class="col-lg-2 d-none d-lg-block" id="sticky-column" style="background-color: #f8f8f8; border: 1px solid rgb(197, 197, 197)">
+              <div class="fixed-position-height" style="position: fixed; height: 100vh; overflow-y: auto">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="layer" style="display: flex; align-items: center; margin-bottom: 30px; margin-top: 100px">
+                    <a href="resource_library.html" class="layer" style="text-decoration: none; color: black">
+                      <img src="image/layers.png" alt="layer" style="margin-left: 5px" />
+                      <span class="resource-library" style="margin-left: 10px">Resource Library</span>
+                    </a>
+                  </li>
+                  <li class="message-square" style="display: flex; align-items: center; margin-bottom: 30px">
+                    <a href="career_pathfinder.html" class="message-square" style="text-decoration: none; color: black">
+                      <img src="image/message-square.png" alt="message-square" style="margin-left: 5px" />
+                      <span class="career-pathfinder" style="margin-left: 10px">Careeer Pathfinder</span>
+                    </a>
+                  </li>
+                  <li class="book-open" style="display: flex; align-items: center; margin-bottom: 30px">
+                    <a href="knowledgecenter.html" class="open-book" style="text-decoration: none; color: black">
+                      <img src="image/book-open.png" alt="book-open" style="margin-left: 5px" />
+                      <span class="knowledge-center" style="margin-left: 10px">Knowledge Center</span>
+                    </a>
+                  </li>
+                  <li class="send" style="display: flex; align-items: center; margin-bottom: 30px">
+                    <a href="talkspace2.html" class="send" style="text-decoration: none; color: black">
+                      <img src="image/send.png" alt="send" style="margin-left: 5px" />
+                      <span class="talk-space" style="margin-left: 10px">Talk Space</span>
+                    </a>
+                  </li>
+                  <li class="users" style="display: flex; align-items: center; margin-bottom: 30px">
+                    <a href="mentorship.html" class="users" style="text-decoration: none; color: black">
+                      <img src="image/users.png" alt="users" style="margin-left: 5px" />
+                      <span class="mentorship" style="margin-left: 10px">Mentorship</span>
+                    </a>
+                  </li>
+                  <li class="power" style="display: flex; align-items: center; margin-bottom: 130px">
+                    <a href="login.html" class="power" style="text-decoration: none; color: black">
+                      <img src="image/power.png" alt="power" style="margin-left: 5px" />
+                      <span class="about" style="margin-left: 10px">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <!-- End Side Navbar -->
+
+          <!-- Resource-lib -->
+          <div class="col-lg-10" style="background-color: white">
+            <div class="row align-items-center">
+              <div class="col-lg-12" style="background-color: white; margin-top: 90px">
+                <h2 class="p-3 text-start">Resource Library</h2>
+                <form class="container-fluid">
+                  <div class="input-group w-50" style="margin-bottom: 30px">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" style="background-color: #fdfef8" />
+                    <a class="butt input-group-text" href="#" style="display: flex; justify-content: space-between; text-decoration: none; color: black; align-items: center; background-color: #bde8ec">
+                      <img src="image/search.png" alt="search" width="25" height="25" style="margin-right: 10px" />Search
+                    </a>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-12" style="background-color: #f8f8f8">
+                <div class="col-lg-12 mx-auto" style="background-color: #bde8ec; border: 1px white; margin-top: 30px; margin-bottom: -8px; width: 95%">
+                  <div class="row">
+                    <div class="col-6 col-lg-6">
+                      <p class="recommendation" style="align-items: start; padding-top: 10px; padding-left: 20px; padding-right: 20px;">Career group</p>
+                    </div>
+                    <div class="col-6 col-lg-6 text-end">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #BDE8EC; padding: 10px 30px; font-family: Sen; font-weight: 500;">
+                          Select 
+                        </button>
+                        <ul class="dropdown-menu bg-red">
+                          <li><a class="dropdown-item" href="#">Tranding</a></li>
+                          <li><a class="dropdown-item" href="#">High Demand</a></li>
+                          <li><a class="dropdown-item" href="#">Beginner Friendly</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-auto col-lg-auto col-6">
+                      <p class="recommendation" style="align-items: start; padding-top: 10px; padding-left: 20px">Ranking :</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-auto col-lg-auto col-6 text-md-end pe-md-4 text-sm-end pe-sm-4 text-end pe-4 col-6">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #FDFEF8; font-family: Sen; font-weight: 500; font-size: 17px; margin-top: 4px; padding: 4px; padding-left: 14px; padding-right: 14px;border: 1px solid #8C8C8C;">
+                          ASC 
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Ascending</a></li>
+                          <li><a class="dropdown-item" href="#">Descending</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                
+                <div class="col-lg-12 mx-auto" style="width: 95%">
+                  <div class="row" style="justify-content: space-around; display: flex">
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/FullStack.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">Fullstack Developer</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  93
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                124
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  5%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/UIUX.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">UI Designer</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  83
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                102
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  4%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/database-engineer.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">Database Engineer</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  88
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                114
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  5%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/dataScientistImg.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">Data Scientist</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  91
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                112
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  9%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/GamDev.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">Game Developer</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  86
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                102
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  4%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" style="margin-top: 20px; margin-bottom: 15px">
+                        <!-- card -->
+                      <div class="card" style="background-color: #FDFEF8;">
+                        <div class="card-body rounded" style="background-color: #FDFEF8;">
+                          <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center">
+                              <a class="navbar-brand justify-content-start" href="#" style="display: flex">
+                                <img src="image/MLEngineer.png" alt="Logo" width="95" height="95" class="d-lg-inline-block" style="margin: 5px 5px" />
+                              </a>
+                            </div>
+                            <div class="col-lg-12">
+                              <li class="text-1 align-self-center" style="list-style: none; line-height: 10px; font-size: 15px; margin-top: 15px; margin-bottom: 25px; margin-left: 9px;" >
+                                <p style="width: 262px; height: 23px; color: black; font-size: 18px; font-family: Sen; font-weight: 400; line-height: 24px; word-wrap: break-word; ">Machine Learning Engineer</p>
+                              </li>
+                            </div>
+                            <div class="col-4 text-center custom-column share border-3 border-top" style="font-size: 15px;">
+                                  <img src="image/like.png" width="18px" height="18px" alt="" style="margin-right: 9px;">
+                                  94
+                              </div>
+                              <div class="col-4 text-center custom-column edit border-3 border-top border-end border-start">
+                                <img src="image/people.png" alt="">
+                                124
+                              </div>
+
+                              <div class="col-4 text-center custom-column view border-3 border-top">
+                                  <img src="image/tranding.png" alt="">
+                                  8%
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div style="display: flex; justify-content: end; padding: 0px 0px">
+                      <ul class="pagination" style="margin-right: 10px">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="box-paging rounded" style="width: 80px; height: 37px; background-color: white; border: 1px solid rgb(226, 225, 225); margin-right: 10px; display: flex; align-items: center; justify-content: center">
+                        1 / Page
+                      </div>
+                      <p style="display: flex; align-items: center; justify-content: center; margin-right: 10px">Go to</p>
+                      <form class="d-flex" role="search" style="height: 37px; width: 80px; margin-right: 10px">
+                        <input class="form-control" type="search" aria-label="Search" />
+                      </form>
+                      <p style="display: flex; align-items: center; justify-content: center">Page</p>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- Resource-lin -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Hide Navbar -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: rgba(1, 183, 196, 0.67)">
+          <a class="navbar-brand justify-content-start" href="index.html" style="display: flex; margin-bottom: -19px">
+            <img src="image/logo2.png" alt="Logo" width="54" height="55" class="d-lg-inline-block;" style="margin-right: 10px" />
+            <p class="prof align-self-center" href="index.html" style="font-family: SF Pro Display; line-height: 26px">Explore<br />IT.</p>
+          </a>
+          <ul class="button" style="display: flex; list-style: none; justify-content: space-between; margin-top: 11px">
+            <li class="chevron-down" style="margin-left: 10px">
+              <a href="#" class="chevron-down" style="text-decoration: none">
+                <img src="image/x.png" alt="chevron-up" data-bs-dismiss="offcanvas" aria-label="Close" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas-body" style="background-color: #f8f8f8">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="layer" style="display: flex; align-items: center; margin-bottom: 25px; margin-top: 15px">
+              <a href="resource_library.html" class="layer" style="text-decoration: none; color: black">
+                <img src="image/layers.png" alt="layer" style="margin-left: 5px" />
+                <span class="resource-library" style="margin-left: 10px">Resource Library</span>
+              </a>
+            </li>
+            <li class="message-square" style="display: flex; align-items: center; margin-bottom: 25px">
+              <a href="career_pathfinder.html" class="message-square" style="text-decoration: none; color: black">
+                <img src="image/message-square.png" alt="message-square" style="margin-left: 5px" />
+                <span class="career-pathfinder" style="margin-left: 10px">Careeer Pathfinder</span>
+              </a>
+            </li>
+            <li class="book-open" style="display: flex; align-items: center; margin-bottom: 25px">
+              <a href="knowledgecenter.html" class="open-book" style="text-decoration: none; color: black">
+                <img src="image/book-open.png" alt="book-open" style="margin-left: 5px" />
+                <span class="knowledge-center" style="margin-left: 10px">Knowledge Center</span>
+              </a>
+            </li>
+            <li class="send" style="display: flex; align-items: center; margin-bottom: 25px">
+              <a href="talkspace2.html" class="send" style="text-decoration: none; color: black">
+                <img src="image/send.png" alt="send" style="margin-left: 5px" />
+                <span class="talk-space" style="margin-left: 10px">Talk Space</span>
+              </a>
+            </li>
+            <li class="users" style="display: flex; align-items: center; margin-bottom: 25px">
+              <a href="mentorship.html" class="users" style="text-decoration: none; color: black">
+                <img src="image/users.png" alt="users" style="margin-left: 5px" />
+                <span class="mentorship" style="margin-left: 10px">Mentorship</span>
+              </a>
+            </li>
+            <li class="power" style="display: flex; align-items: center">
+              <a href="login.html" class="power" style="text-decoration: none; color: black">
+                <img src="image/power.png" alt="power" style="margin-left: 5px" />
+                <span class="about" style="margin-left: 10px">Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Responsive Hide Navbar -->
+      
+      
+    </section>
+    <footer class="py-4" style="background-color: #d9d9d9; position: relative; z-index: 999">
+      <div class="container-fluid" style="background-color: #d9d9d9">
+        <div class="row p-md-1 p-3 justify-content-between" style="font-family: Sen">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-sm-center text-md-center text-lg-start text-xl-start text-center pb-xl-1 pb-lg-1 pb-3" style="color: #5f6263">Copyright © 2023 Explore.IT All rights reserved.</div>
+          <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-4 text-xl-end text-lg-end text-md-center text-sm-center text-center">Privacy Policy</div>
+          <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-4 text-xl-center text-lg-center text-md-center text-sm-center text-center">Terms of Use</div>
+          <div class="col-xl-auto col-lg-auto col-md-4 col-sm-4 col-4 text-xl-center text-lg-center text-md-center text-sm-center text-center">Cookie Policy (EU)</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
